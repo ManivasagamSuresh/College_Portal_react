@@ -11,6 +11,9 @@ import Dashboard from './Dashboard';
 import StaffProfile from './StaffProfile';
 import Editstaffprofile from './Editstaffprofile';
 import CreateStaff from './CreateStaff';
+import StudentProfile from './StudentProfile';
+import EditStudentProfile from './EditStudentProfile';
+import CreateStudent from './CreateStudent';
 
 
 function App() {
@@ -29,6 +32,9 @@ function App() {
           <Route path='/StaffProfile/:id' element={<StaffProfile/>}></Route>
           <Route path='/editstaffprofile/:id' element={<Editstaffprofile/>}></Route>
           <Route path='/Students' element={<Students/>}></Route>
+          <Route path='/StudentProfile/:id' element={<StudentProfile/>}></Route>
+          <Route path='/editstudentprofile/:id' element={<EditStudentProfile/>}></Route>
+          <Route path='/StudentCreate' element={<CreateStudent/>}></Route>
           </Routes>
         </div>
         </div>

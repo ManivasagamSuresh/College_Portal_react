@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-
 function Sidebar() {
   return (
     <ul
@@ -11,7 +10,7 @@ function Sidebar() {
     >
       <Link
         class="sidebar-brand d-flex align-items-center justify-content-center"
-        to={'/'}
+        to={"/"}
       >
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
@@ -22,7 +21,7 @@ function Sidebar() {
       <hr class="sidebar-divider my-0" />
 
       <li class="nav-item active">
-        <Link class="nav-link" to={''}>
+        <Link class="nav-link" to={""}>
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
         </Link>
@@ -49,7 +48,7 @@ function Sidebar() {
       <li class="nav-item">
         <Link
           class="nav-link collapsed"
-          to={'/Students'}
+          to={"/Students"}
           data-toggle="collapse"
           data-target="#collapseUtilities"
           aria-expanded="true"
@@ -57,19 +56,17 @@ function Sidebar() {
         >
           <i class="fas fa-fw fa-wrench"></i>
           <span>Students</span>
-          </Link>
-          
-        
+        </Link>
       </li>
 
       <hr class="sidebar-divider" />
-      
-<div class="btn-group">
+
+      {/* <div class="btn-group">
   <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
   Students
   </button>
   <ul class="dropdown-menu">
-    {/* <li><a class="dropdown-item" href="#">Students</a></li> */}
+    
     <li><a class="dropdown-item" href="#">Mech</a></li>
     <li><a class="dropdown-item" href="#">Automobile</a></li>
     <li><a class="dropdown-item" href="#">ECE</a></li>
@@ -77,8 +74,7 @@ function Sidebar() {
     <li><hr class="dropdown-divider"/></li>
     
   </ul>
-</div>
-
+</div> */}
     </ul>
   );
 }

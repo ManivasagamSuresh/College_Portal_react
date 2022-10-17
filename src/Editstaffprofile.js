@@ -1,5 +1,5 @@
 import { Button } from "bootstrap";
-import React from "react";
+import React, { useEffect } from "react";
 import { Formik, useFormik } from "formik";
 import axios from "axios";
 import { useParams } from "react-router-dom";
@@ -54,6 +54,15 @@ function Editstaffprofile() {
       }
     },
   });
+  useEffect(()=>{
+    let data = async ()=>{
+      let a = await axios.get(`https://63450500dcae733e8fe7f213.mockapi.io/staff/${useparams.id}`)
+      // console.log(a);
+      formik.setValues(a.data)
+    }
+    data()
+   
+  },[])
   return (
     <div className="container">
       <div className="row">
